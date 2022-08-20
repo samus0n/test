@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = UTF-8>
+    </head>
+    <body>
+        <span id = "display"></span>
+    </body>
+    <script>
+        //八王子駅から学校
+        var timeTableString = "7:30|7:40|7:45|7:50|7:55|8:00|9:20|9:25|9:30|9:35|9:40|9:45|9:50|9:55|10:00|10:05|10:10|10:15|10:20|10:25|10:30|10:35|10:40|10:45|10:50|11:00|11:10|11:20|11:30|11:40|11:50|12:05|12:15|12:20|12:25|12:30|12:35|12:40|12:45|12:50|13:00|13:10|13:20|13:30|13:40|13:50|14:00|14:10|14:20|14:30|14:40|14:50|15:00|15:11|15:41|15:51";
+        
+        var parsedTimeTable = [];
+
+        var now = new Date(),
+            year = now.getFullYear(),
+            month = now.getMonth(),
+            day = now.getDate();
+
+         for (var str of timeTableString.split("|")){
+             var str2 = str.split(":"),
+                 hour = parseInt(str2[0],10),
+                 minute = parseInt(str2[1],10);
+             parsedTimeTable.push(new Date(year,month,day,hour,minute));
+         }
+
+         var display = document.getElementById("display");
+
+         function countDown(){
+             var nextTime = null;
+             for (time of parsedTimeTable){
+                 if((time.getTime() - Date.now()) > 0){
+                     nextTime = time;
+                     break;
+                 }
+             }
+             if (nextTime === null){
+                 display.innerHTML = "今日の運行は終わりだっちぃ！";
+             }else{
+                 var diff = time.getTime() - Date.now();
+                 diff = Math.floor(diff / 1000);
+                 var hour = Math.floor(diff / (60 * 60));
+                 diff = diff % (60 * 60);
+                 var min = Math.floor(diff / 60);
+                 diff = diff % 60;
+                 display.innerHTML = "次は" + min + "分" + diff + "秒後に発車するっちぃ！";
+             }
+         }
+         countDown();
+         setInterval(countDown,1000);
+     </script>
+</html>
