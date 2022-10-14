@@ -1,15 +1,51 @@
 
 import './App.css';
+import {useState,useEffect} from 'react'
+import BeatLoader from "react-spinners/BeatLoader";
+import Header from './components/Header';
+import Time from './components/Time';
+import Timetable from './Timetable';
+import 'animate.css';
 
 function App() {
+
+  const [loading,setLoading] = useState(false)
+
+  useEffect(()=>{
+  setLoading(true)
+  setTimeout(()=>{
+
+    setLoading(false)
+
+
+  },4000)
+  },[])
   return (
     <>
-   <p>Hello サム</p>
-   <div class="avatar">
-  <div class="w-24 rounded">
-    <img src="./image1.jpg" />
+    <div className='aaa'>
+      
+    {
+      
+      loading ?
+      <BeatLoader color={'#36d7b7'} loading={loading}  size={50} id="ccc"  />
+      
+      :
+     
+      <div className='bbb'>
+        <div className=' box delay01 animate__animated animate__fadeIn'>
+      <Header/>
+      
+    <p>こんにちは</p>
+    <Timetable/>
+    
+    </div>
   </div>
-</div>
+
+    
+    }
+    </div>
+    
+
 </>
   );
 }

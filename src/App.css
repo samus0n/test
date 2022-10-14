@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+ 
 }
 
 .App-logo {
@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+#ccc {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 25%;
+}
+.delay01 {
+  animation-delay: 0.5s;
+}
+
