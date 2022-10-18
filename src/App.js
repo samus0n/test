@@ -5,6 +5,8 @@ import BeatLoader from "react-spinners/BeatLoader";
 import Header from './components/Header';
 import Time from './components/Time';
 import Timetable from './Timetable';
+import Timetable2 from './Timetable2';
+import Timetable3 from './Timetable3';
 import 'animate.css';
 
 function App() {
@@ -37,6 +39,8 @@ function App() {
       
     <p>こんにちは</p>
     <Timetable/>
+    <Timetable2/>
+    <Timetable3/>
     
     </div>
   </div>

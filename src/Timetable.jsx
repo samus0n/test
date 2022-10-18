@@ -1,7 +1,6 @@
-
+//hachioji minamino station
 import { useState, useEffect } from "react"
-import hatiouziminami from "./hatiouziminami.json"
-
+import hachiojiminamino from "./hachiojiminamino.json"
 
 const Timetable = () => {
   const [inService, setInService] = useState(false)
@@ -12,7 +11,7 @@ const Timetable = () => {
   
 
   useEffect(() => {
-    const departureTimeArr =hatiouziminami.departureTime
+    const departureTimeArr =hachiojiminamino.departureTime
 
     setInterval(() => {
       const date = new Date()
@@ -75,7 +74,7 @@ const Timetable = () => {
     <>
       {inService ? <p>次は{remainingTimeLabel}後に発車するっちぃ！</p> : <p>今日の運行は終わりだっちぃ！</p>}
       <br/>
-      <p>今のバス{a}</p>
+      <p>今の時間{a}</p>
       <p>{b}</p>
     </>
   )
