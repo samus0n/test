@@ -9,6 +9,8 @@ import Timetable2 from './Timetable2';
 import Timetable3 from './Timetable3';
 import 'animate.css';
 
+import{BrowserRouter as Router,Route,Routes } from "react-router-dom";
+
 function App() {
 
   const [loading,setLoading] = useState(false)
@@ -23,6 +25,7 @@ function App() {
   },4000)
   },[])
   return (
+    <Router>
     <>
     <div className='aaa'>
       
@@ -37,12 +40,18 @@ function App() {
         <div className=' box delay01 animate__animated animate__fadeIn'>
       <Header/>
       
-    <p>こんにちは</p>
+    <p>こんにちはyaya</p>
     <Timetable/>
     <Timetable2/>
     <Timetable3/>
     
     </div>
+    <div class="avatar">
+  <div class="w-24 rounded">
+    <img src="https://placeimg.com/192/192/people" />
+  </div>
+</div>
+    
   </div>
 
     
@@ -51,6 +60,7 @@ function App() {
     
 
 </>
+</Router>
   );
 }
 
