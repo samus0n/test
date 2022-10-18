@@ -9,6 +9,8 @@ import Timetable2 from './Timetable2';
 import Timetable3 from './Timetable3';
 import 'animate.css';
 
+import{BrowserRouter as Router,Route,Routes } from "react-router-dom";
+
 function App() {
 
   const [loading,setLoading] = useState(false)
@@ -23,6 +25,7 @@ function App() {
   },4000)
   },[])
   return (
+    <Router>
     <>
     <div className='aaa'>
       
@@ -38,16 +41,19 @@ function App() {
       <Header/>
       
     <p>こんにちはyaya</p>
-    <Timetable/>
-    <Timetable2/>
-    <Timetable3/>
+    <Routes>
+
+    <Route path='/time1' element={<Timetable/>}/>
+    <Route path='/time2' element={<Timetable2/>}/>
+    <Route path='/time3' element={<Timetable3/>}/>
+    
+    
+    
+
+    </Routes>
     
     </div>
-    <div class="avatar">
-  <div class="w-24 rounded">
-    <img src="https://placeimg.com/192/192/people" />
-  </div>
-</div>
+    
     
   </div>
 
@@ -57,6 +63,7 @@ function App() {
     
 
 </>
+</Router>
   );
 }
 
