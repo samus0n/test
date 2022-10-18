@@ -40,7 +40,7 @@ function App() {
         <div className=' box delay01 animate__animated animate__fadeIn'>
       <Header/>
       
-    <p>こんにちはyaya</p>
+    <p>こんにちはyayaa</p>
     <Routes>
 
     <Route path='/time1' element={<Timetable/>}/>
