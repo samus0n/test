@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = UTF-8>
+        <link rel = "stylesheet" href = "sotu.css">
+    </head>
+    <body>
+        <main>
+         <form id = "form">
+          <select name = "select">
+              <option value = "hachioji.html">八王子駅</option>
+              <option value = "minamino.html">八王子みなみ野駅</option>
+              <option value = "dorm.html">学生会館</option>
+          </select>
+         </form> 
+       </main>
+          <span id = "display"></span>
+       <script src = "sotu.js"></script>
+      </body>
+    <script>
+        //学生会館から学校
+        var timeTableString = "8:14|8:26|8:40|8:54|9:08|9:30|10:00|10:24|10:48|12:00|12:28|12:44|14:24|14:54|15:18|16:04|16:28|16:49|17:08";
+        
+        var parsedTimeTable = [];
+
+        var now = new Date(),
+            year = now.getFullYear(),
+            month = now.getMonth(),
+            day = now.getDate();
+
+         for (var str of timeTableString.split("|")){
+             var str2 = str.split(":"),
+                 hour = parseInt(str2[0],10),
+                 minute = parseInt(str2[1],10);
+             parsedTimeTable.push(new Date(year,month,day,hour,minute));
+         }
+
+         var display = document.getElementById("display");
+
+         function countDown(){
+             var nextTime = null;
+             for (time of parsedTimeTable){
+                 if((time.getTime() - Date.now()) > 0){
+                     nextTime = time;
+                     break;
+                 }
+             }
+             if (nextTime === null){
+                 display.innerHTML = "今日の運行は終わりだっちぃ！";
+             }else{
+                 var diff = time.getTime() - Date.now();
+                 diff = Math.floor(diff / 1000);
+                 var hour = Math.floor(diff / (60 * 60));
+                 diff = diff % (60 * 60);
+                 var min = Math.floor(diff / 60);
+                 diff = diff % 60;
+                 display.innerHTML = "次は" + min + "分" + diff + "秒後に発車するっちぃ！";
+             }
+         }
+         countDown();
+         setInterval(countDown,1000);
+     </script>
+</html>
