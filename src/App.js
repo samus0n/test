@@ -37,18 +37,12 @@ function App() {
         <div className=' box delay01 animate__animated animate__fadeIn'>
       <Header/>
       
-    <p>こんにちはyaya</p>
+    <p>こんにちは</p>
     <Timetable/>
     <Timetable2/>
     <Timetable3/>
     
     </div>
-    <div class="avatar">
-  <div class="w-24 rounded">
-    <img src="https://placeimg.com/192/192/people" />
-  </div>
-</div>
-    
   </div>
 
     
