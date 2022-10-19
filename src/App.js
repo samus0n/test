@@ -3,7 +3,6 @@ import './App.css';
 import {useState,useEffect} from 'react'
 import BeatLoader from "react-spinners/BeatLoader";
 import Header from './components/Header';
-import Time from './components/Time';
 import Timetable from './Timetable';
 import Timetable2 from './Timetable2';
 import Timetable3 from './Timetable3';
@@ -40,6 +39,7 @@ function App() {
         <div className=' box delay01 animate__animated animate__fadeIn'>
       <Header/>
       
+
     <p>こんにちはyayaa</p>
     <Routes>
 
@@ -51,9 +51,13 @@ function App() {
     
 
     </Routes>
+
+   
+  
+
     
     </div>
-    
+   
     
   </div>
 
