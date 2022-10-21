@@ -7,6 +7,7 @@ import Timetable from './Timetable';
 import Timetable2 from './Timetable2';
 import Timetable3 from './Timetable3';
 import 'animate.css';
+import Home from './Home';
 
 import{BrowserRouter as Router,Route,Routes } from "react-router-dom";
 
@@ -40,9 +41,10 @@ function App() {
       <Header/>
       
 
-    <p>こんにちはyayaa</p>
+   
     <Routes>
 
+    <Route path="/" element={ <Home/>}/>
     <Route path='/time1' element={<Timetable/>}/>
     <Route path='/time2' element={<Timetable2/>}/>
     <Route path='/time3' element={<Timetable3/>}/>
