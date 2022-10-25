@@ -8,11 +8,13 @@ import Timetable2 from './Timetable2';
 import Timetable3 from './Timetable3';
 import 'animate.css';
 
+
 import{BrowserRouter as Router,Route,Routes } from "react-router-dom";
 
 function App() {
 
   const [loading,setLoading] = useState(false)
+
 
   useEffect(()=>{
   setLoading(true)
@@ -40,7 +42,7 @@ function App() {
       <Header/>
       
 
-    <p>こんにちはyayaa</p>
+    <p>こんにちはyaya</p>
     <Routes>
 
     <Route path='/time1' element={<Timetable/>}/>
@@ -64,11 +66,14 @@ function App() {
     
     }
     </div>
+
+    
     
 
 </>
 </Router>
-  );
-}
+)};
+
+
 
 export default App;

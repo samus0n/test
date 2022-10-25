@@ -75,7 +75,7 @@ const Timetable = () => {
       {inService ? <p>次は{remainingTimeLabel}後に発車するっちぃ！</p> : <p>今日の運行は終わりだっちぃ！</p>}
       <br/>
       <p>今の時間{a}</p>
-      <p>{b}</p>
+      <p>次発{b}</p>
     </>
   )
 }
