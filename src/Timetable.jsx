@@ -1,6 +1,7 @@
 //hachioji minamino station
 import { useState, useEffect } from "react"
 import hachiojiminamino from "./hachiojiminamino.json"
+import css from "./Timetable.css"
 
 const Timetable = () => {
   const [inService, setInService] = useState(false)
@@ -73,15 +74,18 @@ const Timetable = () => {
   }, [])
   return (
     <>
-      {inService ? <p>次は{remainingTimeLabel}後に発車するっちぃ！</p> : <p>今日の運行は終わりだっちぃ！</p>}
-      <br/>
-      <p>今の時間{a}</p>
-      <p>次発{b}</p>
-      <section>
+    <section>
       <div className = "background">
          <img src = {backgroundPicture} />
      </div>
     </section>
+     <div className = "text">
+      {inService ? <p>次は{remainingTimeLabel}後に発車するっちぃ！</p> : <p>今日の運行は終わりだっちぃ！</p>}
+      <br/>
+      <p>今の時間{a}</p>
+      <p>次発{b}</p>
+     </div>
+      
     </>
   )
 }
