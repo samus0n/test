@@ -7,6 +7,7 @@ const Timetable = () => {
   const [remainingTimeLabel, setRemainingTimeLabel] = useState("");
   const [a,setA]=useState("");
   const [b,setB] = useState("");
+  const backgroundPicture = new URL("./images/Mantle.jpg",import.meta.url);
 
   
 
@@ -76,6 +77,11 @@ const Timetable = () => {
       <br/>
       <p>今の時間{a}</p>
       <p>次発{b}</p>
+      <section>
+      <div className = "background">
+         <img src = {backgroundPicture} />
+     </div>
+    </section>
     </>
   )
 }
