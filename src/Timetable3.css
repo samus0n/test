@@ -17,7 +17,8 @@ img {
     position: absolute;
     height: 100vh;
     width: 100%;
-    display: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
