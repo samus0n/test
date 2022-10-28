@@ -1,7 +1,7 @@
 //dorm
 import { useState, useEffect } from "react"
 import dorm from "./dorm.json"
-import css from "./Timetable3.css"
+import {} from "./Timetable3.css"
 
 const Timetable = () => {
   const [inService, setInService] = useState(false)

@@ -1,7 +1,7 @@
 //hachioji minamino station
 import { useState, useEffect } from "react"
 import hachiojiminamino from "./hachiojiminamino.json"
-import css from "./Timetable.css"
+import {} from "./Timetable.css"
 
 const Timetable = () => {
   const [inService, setInService] = useState(false)

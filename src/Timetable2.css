@@ -8,6 +8,7 @@ img {
 }
 
 .background {
+    position: absolute;
     width: cover;
     height: cover;
 }
