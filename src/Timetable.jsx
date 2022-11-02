@@ -36,7 +36,7 @@ const Timetable = () => {
         targetDateObj.setSeconds(0)
 
 
-        
+        //ちんちん
 
          
 
