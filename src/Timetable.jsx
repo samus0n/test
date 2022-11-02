@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 import hachiojiminamino from "./hachiojiminamino.json"
 import {} from "./Timetable.css"
+//import MediaQuery from "react-rersponsive";
 
 const Timetable = () => {
   const [inService, setInService] = useState(false)
@@ -76,7 +77,7 @@ const Timetable = () => {
     <>
     <section>
       <div className = "background">
-         <img src = {backgroundPicture} />
+       <img src = {backgroundPicture} />
      </div>
     </section>
      <div className = "text">

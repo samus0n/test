@@ -8,6 +8,7 @@ import Timetable2 from './Timetable2';
 import Timetable3 from './Timetable3';
 import 'animate.css';
 import Home from './Home';
+//import MediaQuery from "react-responsive";
 
 
 import{BrowserRouter as Router,Route,Routes } from "react-router-dom";
