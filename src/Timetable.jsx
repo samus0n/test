@@ -42,6 +42,7 @@ const Timetable = () => {
 
 
         
+        
 
         if (date < targetDateObj) {
           const remainingTime = Math.floor(((date - targetDateObj) / 1000) * -1) //秒
