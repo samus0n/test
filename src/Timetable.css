@@ -1,20 +1,25 @@
 * {
+    background-size: cover;
     margin:0;
     padding:0;
 }
 
-img {
+.img {
+    background-size: cover;
     max-width: 100%;
 }
 
 .background {
+    background-size: cover;
     position: absolute;
-    height: 100vh;
     width: 100%;
-    display: center;
+    height: 100vh;
 }
+
+
 
 .text{
     position: absolute;
     text-align: center;
+    background-color: none;
 }

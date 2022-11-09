@@ -9,7 +9,8 @@ const Timetable = () => {
   const [remainingTimeLabel, setRemainingTimeLabel] = useState("");
   const [a,setA]=useState("");
   const [b,setB] = useState("");
-  const backgroundPicture = new URL("./images/Mantle.jpg",import.meta.url);
+  const backgroundPicture = new URL("./images/Mantle.jpg",import.meta.url)
+
 
   
 
@@ -37,8 +38,7 @@ const Timetable = () => {
         targetDateObj.setSeconds(0)
 
 
-        //ちんちんぺろぺろ
-        //まんまん
+        
 
          
 
@@ -80,8 +80,9 @@ const Timetable = () => {
     <>
     <section>
       <div className = "background">
-       <img src = {backgroundPicture} />
-     </div>
+        <img src = {backgroundPicture}  alt = "背景"/>
+      </div>
+     
     </section>
      <div className = "text">
       {inService ? <p>次は{remainingTimeLabel}後に発車するっちぃ！</p> : <p>今日の運行は終わりだっちぃ！</p>}
