@@ -6,9 +6,20 @@ const backgroundPicture = new URL("./images/JShine.png",import.meta.url)
 const Home = () => {
   return (
     <section>
-      <div className = "background">
-         <img src = {backgroundPicture} />
-     </div>
+
+
+
+<>
+<div className='back'>
+<button class="btn rounded-none " id='a'>Two</button>
+
+<p>こんにちは</p>
+</div>
+</>
+
+    
+  
+
     </section>
   )
 }
