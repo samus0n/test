@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Home.css"
+import {Link} from "react-router-dom";
+
 
 const backgroundPicture = new URL("./images/JShine.png",import.meta.url)
 
@@ -15,9 +17,9 @@ const Home = () => {
       
       
      <div className='button'>
-      <button class="btn btn-wide" id='a'>八王子駅発</button>
-      <button class="btn btn-wide" id='a'>みなみ野駅発</button><br/>
-      <button class="btn btn-wide" id='a'>学生会館発</button>
+      <button class="btn btn-wide" id='a'><Link to="/time2">八王子駅南口発</Link></button>
+      <button class="btn btn-wide" id='a'><Link to="/time1">八王子みなみ野発</Link></button><br/>
+      <button class="btn btn-wide" id='a'><Link to="/time3">学生会館発</Link></button>
       </div>
 
 
