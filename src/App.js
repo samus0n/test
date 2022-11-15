@@ -35,7 +35,7 @@ function App() {
         <div className=' box delay01 animate__animated animate__fadeIn'>
       <Header/>
       
-    <p>こんにちは</p>
+    <p>こんにちはoppai</p>
     <Timetable/>
     
     </div>
