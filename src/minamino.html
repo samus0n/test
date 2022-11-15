@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = UTF-8>
+        <link rel = "stylesheet" href = "sotu.css">
+    </head>
+    <body>
+        <main>
+         <form id = "form">
+          <select name = "select">
+              <option value = "hachioji.html">八王子駅</option>
+              <option value = "minamino.html">八王子みなみ野駅</option>
+              <option value = "dorm.html">学生会館</option>
+          </select>
+         </form> 
+       </main>
+          <span id = "display"></span>
+       <script src = "sotu.js"></script>
+      </body>
+    <script>
+        //八王子みなみ野駅から学校
+        var timeTableString = "7:28|7:32|7:42|7:50|7:55|8:04|8:13|9:23|9:31|9:40|9:52|9:58|10:08|10:16|10:21|10:29|10:38|10:44|10:54|11:00|11:14|11:20|11:34|11:40|11:54|12:00|12:05|12:10|12:15|12:20|12:25|12:30|12:35|12:40|12:45|12:50|13:00|13:14|13:20|13:34|13:40|13:54|14:00|14:14|14:54|15:50|15:11|15:22|15:30|15:43|14:50|15:00|15:11|15:22|15:30|15:43|15:52|16:05|16:18|16:28|16:38|17:25|17:35|17:45|17:53|18:02|18:10|18:17|18:22|18:30|18:38|18:48|19:13|19:19|19:27|19:38|19:47|19:57|20:07|20:18|20:27|20:37|20:47|20:58|21:09|21:21|21:27";
+        
+        var parsedTimeTable = [];
+
+        var now = new Date(),
+            year = now.getFullYear(),
+            month = now.getMonth(),
+            day = now.getDate();
+
+         for (var str of timeTableString.split("|")){
+             var str2 = str.split(":"),
+                 hour = parseInt(str2[0],10),
+                 minute = parseInt(str2[1],10);
+             parsedTimeTable.push(new Date(year,month,day,hour,minute));
+         }
+
+         var display = document.getElementById("display");
+
+         function countDown(){
+             var nextTime = null;
+             for (time of parsedTimeTable){
+                 if((time.getTime() - Date.now()) > 0){
+                     nextTime = time;
+                     break;
+                 }
+             }
+             if (nextTime === null){
+                 display.innerHTML = "今日の運行は終わりだっちぃ！";
+             }else{
+                 var diff = time.getTime() - Date.now();
+                 diff = Math.floor(diff / 1000);
+                 var hour = Math.floor(diff / (60 * 60));
+                 diff = diff % (60 * 60);
+                 var min = Math.floor(diff / 60);
+                 diff = diff % 60;
+                 display.innerHTML = "次は" + min + "分" + diff + "秒後に発車するっちぃ！";
+             }
+         }
+         countDown();
+         setInterval(countDown,1000);
+     </script>
+</html>
