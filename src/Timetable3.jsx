@@ -74,17 +74,21 @@ const Timetable = () => {
   }, [])
   return (
     <>
-     <section>
-      <div className = "background">
-         <img src = {backgroundPicture} />
+   
+   <div className="back3">
+  
+  
+   <div className = "card">
+      <div className = "content">
+        <h1>学生会館➡学校</h1>
+        <h2>現在時刻 {a}</h2>
+        {inService ? <p>次は{remainingTimeLabel}後に発車するっちぃ!</p> : <p>今日の運行は終わりだっちぃ！</p>}
+        <p>次発　{b}</p>
+      </div>
+    </div>
      </div>
-    </section>
-     <div className = "text">
-      {inService ? <p>次は{remainingTimeLabel}後に発車するっちぃ！</p> : <p>今日の運行は終わりだっちぃ！</p>}
-      <br/>
-      <p>今の時間{a}</p>
-      <p>次発{b}</p>
-     </div>
+
+
     </>
   )
 }
