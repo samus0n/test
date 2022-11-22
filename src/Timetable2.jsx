@@ -49,7 +49,7 @@ const Timetable = () => {
           
           console.log(`残り時間:${remainingTime}`)
 
-          const h = Math.floor(remainingTime % (24 * 60 * 60) / (60 * 60))
+          
           const m = Math.floor(remainingTime % (24 * 60 * 60) % (60 * 60) / 60)
           const s = remainingTime % (24 * 60 * 60) % (60 * 60) % 60
 
@@ -61,7 +61,7 @@ const Timetable = () => {
 
      
 
-          setRemainingTimeLabel(`${h}時間${m}分${s}秒`)
+          setRemainingTimeLabel(`${m}:${s}`)
           setInService(true)
 
           break
@@ -78,7 +78,7 @@ const Timetable = () => {
       <div className = "content">
         <h2>八王子駅➡学校</h2><br></br>
         <p>現在時刻  {a}</p>
-        {inService ? <p>次は{remainingTimeLabel}後に発車するっちぃ!</p> : <p>今日の運行は終わりだっちぃ！</p>}
+        {inService ? <p>発車まで　{remainingTimeLabel}</p> : <p>今日の運行は終わりだっちぃ！</p>}
         <p>次発　{b}</p>
       </div>
     </div>
