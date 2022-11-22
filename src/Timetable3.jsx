@@ -8,8 +8,6 @@ const Timetable = () => {
   const [remainingTimeLabel, setRemainingTimeLabel] = useState("");
   const [a,setA]=useState("");
   const [b,setB] = useState("");
-  const backgroundPicture = new URL("./images/Sunset.jpg",import.meta.url);
-
   
 
   useEffect(() => {
@@ -80,8 +78,8 @@ const Timetable = () => {
   
    <div className = "card">
       <div className = "content">
-        <h1>学生会館➡学校</h1>
-        <h2>現在時刻 {a}</h2>
+        <h2>学生会館➡学校</h2><br></br>
+        <p>現在時刻 {a}</p>
         {inService ? <p>次は{remainingTimeLabel}後に発車するっちぃ!</p> : <p>今日の運行は終わりだっちぃ！</p>}
         <p>次発　{b}</p>
       </div>

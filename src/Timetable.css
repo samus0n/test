@@ -35,3 +35,13 @@ img {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
 }
+
+.content {
+    color: black;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: xx-large;
+    
+}
