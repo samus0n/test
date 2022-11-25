@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import './aaa.css';
 
 const Header = () => {
   return (
@@ -20,7 +21,9 @@ const Header = () => {
     </div>
   </div>
   <div class="navbar-center">
-    <a class="btn btn-ghost normal-case text-xl">Time</a>
+    
+    <a class="btn btn-ghost normal-case text-xl" id='asd'>Bus Romance</a>
+    
   </div>
   <div class="navbar-end">
     <button class="btn btn-ghost btn-circle">
