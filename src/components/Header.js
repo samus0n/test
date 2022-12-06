@@ -22,7 +22,7 @@ const Header = () => {
   </div>
   <div class="navbar-center">
     
-    <a class="btn btn-ghost normal-case text-xl" id='asd'>Bus Romance</a>
+    <a class=" normal-case text-xl" id='asd'>Bus Romance</a>
     
   </div>
   <div class="navbar-end">

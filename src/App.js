@@ -37,6 +37,7 @@ function App() {
       loading ?
       <BeatLoader color={'#36d7b7'} loading={loading}  size={50} id="ccc"  />
       
+      
       :
      
       <div className='bbb'>
