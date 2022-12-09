@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { usestate,useEffect } from 'react'
 import "./Home.css"
 import {Link} from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css"
 import Weather from './components/Weather';
 
-const backgroundPicture = new URL("./images/JShine.png",import.meta.url)
 
 const Home = () => {
 
@@ -13,6 +12,13 @@ const Home = () => {
   useEffect(() => {
    Aos.init({duration: 2000});
   },[])
+
+
+
+
+
+
+
   return (
 
     <div className='back'>
@@ -38,10 +44,19 @@ const Home = () => {
 
 
     <div data-aos="fade">
+ 
+
+
+
+    //あーーー
+    
       <div className='card1'>
+    
       <Weather/>
+  
 
       </div>
+    
       
       
       </div>

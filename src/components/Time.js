@@ -16,11 +16,18 @@ const Time = () => {
 
         const b = a.getHours()+':'+a.getMinutes();
 
-       
+        
+
+       const c = new Date();
+
+       const d = c.getMonth()+"/"+c.getDate()
+
+       setTime(d)
+
+
 
  
 
-        setTime(b)
         
 
       
