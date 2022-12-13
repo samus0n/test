@@ -32,9 +32,9 @@ const Weather = () => {
 
     <div>
         <div className='date'>
-            <Time/>
+            <p><Time/></p>
         </div>
-        <div className='tenki'>{weather.label}</div>
+        <div className='tenki'><p>{weather.label}</p></div>
         <div className='tenkiimage'>
             <img src ={weather.image} id ="aaa"></img>
             
