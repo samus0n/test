@@ -32,6 +32,8 @@ img {
     margin: 50px;
     
    
+    
+   
    
     
 }
@@ -49,6 +51,7 @@ img {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     margin: auto;
+    margin-bottom: 30%;
 }
 .delay02 {
     animation-delay: 1.5s;
