@@ -3,6 +3,9 @@ import { useState, useEffect } from "react"
 import {} from "react-dom"
 import hachiojiminamino from "./hachiojiminamino.json"
 import {} from "./Timetable.css"
+import Footer from "./components/Footer"
+import 'animate.css';
+
 //import MediaQuery from "react-rersponsive";
 
 const Timetable = () => {
@@ -76,16 +79,23 @@ const Timetable = () => {
   return (
     <>
    <div className="back1">
+   <div className=' box delay01 animate__animated animate__fadeIn'>
    <div className = "card">
       <div className = "content">
         <h2>八王子みなみ野駅➡学校</h2><br></br>
         <p>現在時刻 {a}</p>
         {inService ? <h3>発車まで　{remainingTimeLabel}</h3> : <p>今日の運行は終わりだっちぃ！</p>}
         <p>次発　{b}</p>
+        
       </div>
     </div>
    </div>
-      
+   </div>
+   
+
+
+    <Footer/>
+
     </>
   )
 }

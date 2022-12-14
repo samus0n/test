@@ -1,9 +1,14 @@
-date,p {
-    color: black;
+
+.text{
+    margin-bottom: 10%;
+    font-size: 30px;
+
 }
 
-tenkiimage,aaa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#aaa {
+    padding-left: 40px;
+}
+p {
+    color: black;
+
 }

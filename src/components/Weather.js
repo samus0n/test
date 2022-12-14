@@ -30,7 +30,10 @@ const Weather = () => {
   return (
 
 
-    <div>
+    <div　className='weathers'>
+        <div className='text'>
+            <h1>今日の天気</h1>
+        </div>
         <div className='date'>
             <p><Time/></p>
         </div>

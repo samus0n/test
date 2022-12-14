@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css"
 import Weather from './components/Weather';
+import Footer from './components/Footer';
 
 
 const Home = () => {
@@ -14,7 +15,9 @@ const Home = () => {
   },[])
 
 
-
+const test = () => {
+  console.log("押しました！");
+}
 
 
 
@@ -42,24 +45,30 @@ const Home = () => {
       </div>
       </div>
 
+      
+
+
 
     <div data-aos="fade">
  
 
 
 
-    //あーーー
+   
     
       <div className='card1'>
+        
     
       <Weather/>
   
 
       </div>
+
     
       
       
       </div>
+      <Footer/>
 
     </section>
     </div>

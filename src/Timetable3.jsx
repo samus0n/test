@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 import dorm from "./dorm.json"
 import {} from "./Timetable3.css"
+import 'animate.css'
 
 const Timetable = () => {
   const [inService, setInService] = useState(false)
@@ -75,7 +76,7 @@ const Timetable = () => {
    
    <div className="back3">
   
-  
+   <div className=' box delay01 animate__animated animate__fadeIn'>
    <div className = "card">
       <div className = "content">
         <h2>学生会館➡学校</h2><br></br>
@@ -83,6 +84,7 @@ const Timetable = () => {
         {inService ? <p>発車まで　{remainingTimeLabel}</p> : <p>今日の運行は終わりだっちぃ！</p>}
         <p>次発　{b}</p>
       </div>
+    </div>
     </div>
      </div>
 
