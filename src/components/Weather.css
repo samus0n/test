@@ -1,3 +1,9 @@
 date,p {
     color: black;
 }
+
+tenkiimage,aaa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
