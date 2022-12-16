@@ -8,7 +8,7 @@
 #aaa {
     padding-left: 40px;
 }
-p {
+p,h1 {
     color: black;
 
 }
