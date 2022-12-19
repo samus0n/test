@@ -17,7 +17,7 @@ img {
     justify-content: center;
 }
 
-.card {
+.card6 {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     width: 600px;
@@ -30,6 +30,7 @@ img {
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
+    margin-top: 20%;
 }
 
 .content {
@@ -45,4 +46,52 @@ h2 {
 h3,p {
     font-weight: bold;
     font-size: x-large;  
+}
+.oritatami2 {
+    margin-top: 20%;
+    margin-bottom: 50%;
+    font-size: 20px;
+}
+.card4 {
+    border-top: 1px solid rgba(35, 26, 26, 0);
+    border-left: 1px solid rgb(255, 255, 255);
+    width: 400px;
+    height: 150px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.295);
+    background: rgb(61, 68, 81);
+    backdrop-filter: blur(15px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+   
+}
+.oritatami2 img {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+details[open] {
+    border-top: 1px solid rgba(35, 26, 26, 0);
+    border-left: 1px solid rgb(255, 255, 255);
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.295);
+    background: rgb(61, 68, 81);
+    backdrop-filter: blur(15px);
+    margin-left: auto;
+    margin-right: auto;
+}
+summary {
+    color:#ffff;
 }

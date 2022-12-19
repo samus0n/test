@@ -3,6 +3,8 @@ import { useState, useEffect } from "react"
 import hachioji from "./hachioji.json"
 import {} from "./Timetable2.css"
 import 'animate.css';
+import Footer from "./components/Footer";
+import Img from "./components/hatiouzibus.png"
 
 const Timetable = () => {
   const [inService, setInService] = useState(false)
@@ -76,7 +78,7 @@ const Timetable = () => {
     <>
    <div className="back2">
    <div className=' box delay01 animate__animated animate__fadeIn'>
-   <div className = "card">
+   <div className = "card6">
       <div className = "content">
         <h2>八王子駅➡学校</h2><br></br>
         <p>現在時刻  {a}</p>
@@ -84,9 +86,19 @@ const Timetable = () => {
         <p>次発　{b}</p>
       </div>
     </div>
+    <div className="oritatami2">
+      <div className="card4">
+
+    <details>
+  <summary>バス停</summary>
+  <img src={Img} alt="Dinosaur"/>
+
+</details>
+</div>
+</div>
     </div>
      </div>
-     
+     <Footer/>
     </>
   )
 }
