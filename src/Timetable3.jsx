@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import dorm from "./dorm.json"
 import {} from "./Timetable3.css"
 import 'animate.css'
+import Footer from "./components/Footer"
 
 const Timetable = () => {
   const [inService, setInService] = useState(false)
@@ -77,7 +78,7 @@ const Timetable = () => {
    <div className="back3">
   
    <div className=' box delay01 animate__animated animate__fadeIn'>
-   <div className = "card">
+   <div className = "card7">
       <div className = "content">
         <h2>学生会館➡学校</h2><br></br>
         <p>現在時刻 {a}</p>
@@ -88,7 +89,7 @@ const Timetable = () => {
     </div>
      </div>
 
-
+<Footer/>
     </>
   )
 }

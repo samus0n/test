@@ -5,6 +5,7 @@ import hachiojiminamino from "./hachiojiminamino.json"
 import {} from "./Timetable.css"
 import Footer from "./components/Footer"
 import 'animate.css';
+import Img from "./components/minamibus.png"
 
 //import MediaQuery from "react-rersponsive";
 
@@ -80,7 +81,7 @@ const Timetable = () => {
     <>
    <div className="back1">
    <div className=' box delay01 animate__animated animate__fadeIn'>
-   <div className = "card">
+   <div className = "card5">
       <div className = "content">
         <h2>八王子みなみ野駅➡学校</h2><br></br>
         <p>現在時刻 {a}</p>
@@ -89,6 +90,16 @@ const Timetable = () => {
         
       </div>
     </div>
+    <div className="oritatami">
+      <div className="card3">
+
+    <details>
+  <summary>バス停</summary>
+  <img src={Img} alt="Dinosaur"/>
+
+</details>
+</div>
+</div>
    </div>
    </div>
    
