@@ -42,3 +42,8 @@ h2 {
     font-size: xx-large;
     
 }
+
+h3,p {
+    font-weight: bold;
+    font-size: x-large;  
+}

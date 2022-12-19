@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .text{
     margin-bottom: 10%;
@@ -12,4 +13,19 @@
 p {
     color: black;
 
+=======
+
+.text{
+    margin-bottom: 10%;
+    font-size: 30px;
+
+}
+
+#aaa {
+    padding-left: 40px;
+}
+p {
+    color: black;
+
+>>>>>>> 8b90bd809311cbd817813d2aca0281a54d12fd98
 }
