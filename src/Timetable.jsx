@@ -86,7 +86,7 @@ const Timetable = () => {
         <h2>八王子みなみ野駅➡学校</h2><br></br>
         <p>現在時刻 {a}</p>
         {inService ? <h3>発車まで　{remainingTimeLabel}</h3> : <p>今日の運行は終わりだっちぃ！</p>}
-        <p>次発　{b}</p>
+        <p>発車時刻　{b}</p>
         
       </div>
     </div>
