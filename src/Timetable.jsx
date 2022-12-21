@@ -31,7 +31,7 @@ const Timetable = () => {
 
         const bbb = splitTimeArr;
 
-
+        const t = ('00' + ggg).slice(-2);
 
 
         
@@ -59,7 +59,7 @@ const Timetable = () => {
           const m = Math.floor(remainingTime % (24 * 60 * 60) % (60 * 60) / 60)
           const s = remainingTime % (24 * 60 * 60) % (60 * 60) % 60
          
-
+          const t = ('00' + s).slice(-2);
 
           setA(`${ggg}`)
 
@@ -67,7 +67,7 @@ const Timetable = () => {
 
      
 
-          setRemainingTimeLabel(`${m}:${s}`)
+          setRemainingTimeLabel(`${m}:${t}`)
           setInService(true)
 
           break
