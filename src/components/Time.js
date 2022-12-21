@@ -14,7 +14,7 @@ const Time = () => {
 
         const a = new Date(timedata * 1000);
 
-        const b = a.getHours()+':'+a.getMinutes();
+        const b = a.getHours() + a.getMinutes();
 
         
 
