@@ -1,9 +1,12 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import './aaa.css';
+import './Header.css';
+import Icon from './icon.png';
+
 
 const Header = () => {
   return (
+    <div className='head'>
     <header>
         <div class="navbar bg-base-100">
   <div class="navbar-start">
@@ -22,12 +25,14 @@ const Header = () => {
   </div>
   <div class="navbar-center">
     
-    <a class=" normal-case text-xl" id='asd'>Bus Romance</a>
+    <a class=" normal-case text-xl" id='asd'> <img src={Icon}></img></a>
     
   </div>
   
 </div>
     </header>
+    
+</div>
   )
 }
 

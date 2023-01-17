@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
 import "./Weather.css"
-import Time from './Time'
+
 
 
 const Weather = () => {
@@ -34,9 +34,7 @@ const Weather = () => {
         <div className='text'>
             <h1>今日の天気</h1>
         </div>
-        <div className='date'>
-            <p><Time/></p>
-        </div>
+        
         <div className='tenki'><p>{weather.label}</p></div>
         <div className='tenkiimage'>
             <img src ={weather.image} id ="aaa"></img>

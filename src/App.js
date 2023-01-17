@@ -42,7 +42,9 @@ function App() {
      
       <div className='bbb'>
         <div className=' box delay01 animate__animated animate__fadeIn'>
+          <div id='Header'>
       <Header/>
+      </div>
       
 
   
