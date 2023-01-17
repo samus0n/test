@@ -20,7 +20,7 @@ const Time = () => {
 
        const c = new Date();
 
-       const d = c.getMonth()+"/"+c.getDate()
+       const d = c.getMonth()+1+"/"+c.getDate()
 
        setTime(d)
 
