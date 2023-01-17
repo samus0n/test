@@ -14,13 +14,13 @@ const Time = () => {
 
         const a = new Date(timedata * 1000);
 
-        const b = a.getHours()+':'+a.getMinutes();
+        const b = a.getHours() + a.getMinutes();
 
         
 
        const c = new Date();
 
-       const d = c.getMonth()+"/"+c.getDate()
+       const d = c.getMonth()+1+"/"+c.getDate()
 
        setTime(d)
 
