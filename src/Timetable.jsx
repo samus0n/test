@@ -14,6 +14,7 @@ const Timetable = () => {
   const [remainingTimeLabel, setRemainingTimeLabel] = useState("");
   const [a,setA]=useState("");
   const [b,setB] = useState("");
+  const [c,setC] = useState("");
  
   
 
@@ -29,9 +30,13 @@ const Timetable = () => {
 
         const ggg = targetDateObj.toLocaleTimeString();
 
-        const bbb = splitTimeArr;
+        
 
         const t = ('00' + ggg).slice(-2);
+
+        const bbb = splitTimeArr[0];
+        const ccc = splitTimeArr[1];
+
 
 
         
@@ -60,12 +65,15 @@ const Timetable = () => {
           const s = remainingTime % (24 * 60 * 60) % (60 * 60) % 60
          
           const t = ('00' + s).slice(-2);
+          
 
           setA(`${ggg}`)
 
           setB(`${bbb}`)
 
-     
+          setC(`${ccc}`)
+
+          
 
           setRemainingTimeLabel(`${m}:${t}`)
           setInService(true)
@@ -75,8 +83,11 @@ const Timetable = () => {
 
         setInService(false)
       }
+     
     }, 1000)
-  }, [])
+  }, 
+  
+  [])
   return (
     <>
    <div className="back1">
@@ -86,7 +97,7 @@ const Timetable = () => {
         <h2>八王子みなみ野駅➡学校</h2><br></br>
         <p>現在時刻 {a}</p>
         {inService ? <h3>発車まで　{remainingTimeLabel}</h3> : <p>今日の運行は終わりだっちぃ！</p>}
-        <p>発車時刻　{b}</p>
+        <p>発車時刻　{b}:{c}</p>
         
       </div>
     </div>

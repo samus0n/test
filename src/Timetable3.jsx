@@ -10,6 +10,7 @@ const Timetable = () => {
   const [remainingTimeLabel, setRemainingTimeLabel] = useState("");
   const [a,setA]=useState("");
   const [b,setB] = useState("");
+  const [c,setC] = useState("");
   
 
   useEffect(() => {
@@ -24,7 +25,8 @@ const Timetable = () => {
 
         const ggg = targetDateObj.toLocaleTimeString();
 
-        const bbb = splitTimeArr;
+        const bbb = splitTimeArr[0];
+        const ccc = splitTimeArr[1];
 
 
 
@@ -60,6 +62,8 @@ const Timetable = () => {
 
           setB(`${bbb}`)
 
+          setC(`${ccc}`)
+
      
 
           setRemainingTimeLabel(`${m}:${s}`)
@@ -83,7 +87,7 @@ const Timetable = () => {
         <h2>学生会館➡学校</h2><br></br>
         <p>現在時刻 {a}</p>
         {inService ? <p>発車まで　{remainingTimeLabel}</p> : <p>今日の運行は終わりだっちぃ！</p>}
-        <p>発車時刻　{b}</p>
+        <p>発車時刻　{b}:{c}</p>
       </div>
     </div>
     </div>
