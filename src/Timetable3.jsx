@@ -57,6 +57,7 @@ const Timetable = () => {
           const s = remainingTime % (24 * 60 * 60) % (60 * 60) % 60
 
 
+          const t = ('00' + s).slice(-2);
 
           setA(`${ggg}`)
 
@@ -66,7 +67,7 @@ const Timetable = () => {
 
      
 
-          setRemainingTimeLabel(`${m}:${s}`)
+          setRemainingTimeLabel(`${m}:${t}`)
           setInService(true)
 
           break

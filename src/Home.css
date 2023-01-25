@@ -32,7 +32,8 @@ img {
     width: 300px;
     height: 150px;
     margin: 50px;
-    margin-top: 10%;
+    margin-top: 5%;
+   
 
     
     
@@ -41,6 +42,11 @@ img {
    
    
     
+}
+#a:hover    {
+    background-color: #fff;
+    border-color: #444;
+    color: #444;
 }
 .card1 {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -75,6 +81,7 @@ img {
         width: 250px;
         height: 100px;
         margin: 10px 30px;
+       
        
        
     }
