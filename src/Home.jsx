@@ -23,11 +23,13 @@ const test = () => {
 
 
   return (
+    <>
 
     <div className='back'>
 
 
     <section>
+
 
     <div className=' box delay03 animate__animated animate__fadeIn'>
      
@@ -73,6 +75,7 @@ const test = () => {
 
     </section>
     </div>
+    </>
   )
 }
 

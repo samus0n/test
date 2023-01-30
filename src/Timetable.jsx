@@ -32,7 +32,7 @@ const Timetable = () => {
 
         
 
-        const t = ('00' + ggg).slice(-2);
+        
 
         const bbb = splitTimeArr[0];
         const ccc = splitTimeArr[1];

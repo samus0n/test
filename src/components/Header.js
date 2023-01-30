@@ -28,6 +28,7 @@ const Header = () => {
     <a class=" normal-case text-xl" id='asd'> <img src={Icon}></img></a>
     
   </div>
+ 
   
 </div>
     </header>
