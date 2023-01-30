@@ -24,23 +24,25 @@ const test = () => {
 
   return (
     <>
+   
 
     <div className='back'>
 
 
     <section>
 
-
-    <div className=' box delay03 animate__animated animate__fadeIn'>
-     
-      </div>
+    
+    <div className="text123"><h1>Bus Romance</h1><br/><p>~遅刻か遅刻以外か～</p></div>
 
 
-
-      
     <div className=' box delay02 animate__animated animate__fadeIn'>
      <div className='button'>
+     
+     
       <div className='top1'>
+      
+      
+      
       <button class="btn btn-wide" id='a'><Link to="/time2">八王子駅南口発</Link></button>
       <button class="btn btn-wide" id='a'><Link to="/time1">八王子みなみ野発</Link></button><br/>
       </div>
@@ -64,8 +66,12 @@ const test = () => {
     
       <Weather/>
   
+    
 
       </div>
+
+      
+
 
     
       

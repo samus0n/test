@@ -1,23 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 
-
-#asd p {
-    font-family: 'Pinyon Script', sans-serif;
-    font-size: 2em;
-  margin-left: -80px;
+*{
+  margin: 0;
+  padding: 0;
+  
+  
 }
+
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar{
+  background-color:rgb(61, 61, 61);
+
+  width: 100%;
+ 
+  
+
+}
+
+
+
+.navbar-start {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  
+
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+ 
+
+ 
+}
+
+#asd{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: 'Pinyon Script', sans-serif;
+  font-size: 2em;
+}
+
+#navtext{
+  color: black;
+}
+
+
+
+
    
-#asd img {
-  width: 8%;
-  height: 8%;
- margin:2px 28%;
 
-}
 
 @media screen and (max-width:480px){
-#asd img {
-  width: 5%;
-  height: 5%;
-  margin: 0.5px 13%;
-}
+
+
 }
