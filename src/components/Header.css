@@ -60,7 +60,25 @@ header{
    
 
 
+
 @media screen and (max-width:480px){
 
 
+
+#asd img {
+  width: 8%;
+  height: 8%;
+ margin:2px 28%;
+ 
+}
+
+@media screen and (max-width:480px){
+#asd img {
+  width: 5%;
+  height: 5%;
+  margin: 0.5px 13%;
+  
+}
+
+}
 }
