@@ -7,6 +7,8 @@ import Footer from "./components/Footer"
 import 'animate.css';
 import Img from "./components/minamibus.png"
 
+
+
 //import MediaQuery from "react-rersponsive";
 
 const Timetable = () => {
@@ -15,23 +17,34 @@ const Timetable = () => {
   const [a,setA]=useState("");
   const [b,setB] = useState("");
   const [c,setC] = useState("");
+
+  
  
   
 
   useEffect(() => {
+    
     const departureTimeArr =hachiojiminamino.departureTime
 
     setInterval(() => {
       const date = new Date()
       for (let v of departureTimeArr) {
+
         const splitTimeArr = v.split(":")
 
         const targetDateObj = new Date()
+
+        
+
+        
+
+        
 
         const ggg = targetDateObj.toLocaleTimeString();
 
         
 
+       
         
 
         const bbb = splitTimeArr[0];
@@ -73,6 +86,7 @@ const Timetable = () => {
 
           setC(`${ccc}`)
 
+         
           
 
           setRemainingTimeLabel(`${m}:${t}`)
@@ -85,6 +99,13 @@ const Timetable = () => {
       }
      
     }, 1000)
+
+
+    
+    
+
+
+
   }, 
   
   [])
@@ -108,6 +129,7 @@ const Timetable = () => {
   <summary>バス停</summary>
   <img src={Img} alt="Dinosaur"/>
 
+  
 </details>
 </div>
 </div>

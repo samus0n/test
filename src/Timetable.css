@@ -62,7 +62,7 @@ h3,p {
 }
 .card3 {
     border-top: 1px solid rgba(35, 26, 26, 0);
-    border-left: 1px solid rgb(255, 255, 255);
+    
     width: 400px;
     height: 150px;
    
@@ -86,7 +86,6 @@ h3,p {
 }
 details[open] {
     border-top: 1px solid rgba(35, 26, 26, 0);
-    border-left: 1px solid rgb(255, 255, 255);
     width: 400px;
     height: 300px;
     display: flex;
