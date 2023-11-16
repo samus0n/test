@@ -1,5 +1,6 @@
 {
   "name": "test",
+  "homepage": "https://samus0n.github.io/test/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +14,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
     "daisyui": "^2.43.2",
+    "gh-pages": "^6.0.0",
     "particlesjs": "^2.2.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
@@ -24,16 +26,14 @@
     "react-spinners": "^0.13.6",
     "web-vitals": "^2.1.0"
   },
-  "homepage": "https://samus0n.github.io/test/",
+ 
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "rm":"rm -rf docs",
-    "mv":"mv build docs",
-    "git": "git add . && git commit && git push origin master",
-    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
+    "deploy": "gh-pages -d build",
+    "predeploy":"npm run build",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
