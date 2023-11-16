@@ -24,11 +24,16 @@
     "react-spinners": "^0.13.6",
     "web-vitals": "^2.1.0"
   },
+  "homepage": "https://samus0n.github.io/test/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "rm":"rm -rf docs",
+    "mv":"mv build docs",
+    "git": "git add . && git commit && git push origin master",
+    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
   },
   "eslintConfig": {
     "extends": [
