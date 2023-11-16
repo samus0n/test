@@ -5,6 +5,15 @@ import Icon from './icon.png';
 
 
 const Header = () => {
+
+
+
+
+const buttons = () => {
+  
+ 
+
+}
   return (
    
     <header>
@@ -12,7 +21,7 @@ const Header = () => {
         
         
   <div class="navbar-start">
-  <a class="normal-case text-xl" id='asd'> <img src={Icon} width="96px" />Bus Romance</a>
+  <button id='asd'> <img src={Icon} width="96px" onClick={buttons} />Bus Romance</button>
  
     <div class="dropdown">
 

@@ -15,9 +15,6 @@ const Home = () => {
   },[])
 
 
-const test = () => {
-  console.log("押しました！");
-}
 
 
 
@@ -32,10 +29,13 @@ const test = () => {
     <section>
 
     
-    <div className="text123"><h1>Bus Romance</h1><br/><p>~遅刻か遅刻以外か～</p></div>
+    
 
 
     <div className=' box delay02 animate__animated animate__fadeIn'>
+
+    <div className="text123"><h1>Bus Romance</h1><br/><p>~遅刻か遅刻以外か～</p></div>
+      
      <div className='button'>
      
      
